@@ -69,14 +69,14 @@ body {
 }
 
 /* Media Queries for Responsive Design */
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   /* Adjust font size for mobile devices */
   .carousel-caption h5 {
-    font-size: 2.5rem;
+    font-size: 1.8rem; /* Smaller font size on mobile */
   }
 
   .carousel-caption p {
-    font-size: 1.5rem;
+    font-size: 1rem; /* Smaller font size on mobile */
   }
 
   /* Adjust height for smaller screens */
@@ -85,7 +85,7 @@ body {
   }
 
   .carousel-caption {
-    bottom: 10%;
+    bottom: 10%; /* Move the caption closer to the bottom */
   }
 }
 
