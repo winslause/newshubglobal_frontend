@@ -14,9 +14,14 @@ body {
 }
 
 /* Navbar Styles */
+nav{
+    padding: 30px !important;
+}
 .navbar {
   background-color: #030122 !important;
   border-bottom: 2px solid #0a84bd;
+  margin: 30px;
+  border-radius: 20px;
 }
 
 .nav-link {
@@ -27,7 +32,7 @@ body {
   color: #ff3399 !important;
 }
 
-/* Carousel Styles */
+
 /* Carousel Styles */
 .carousel-caption h5 {
   font-size: 3.5rem;
@@ -64,13 +69,33 @@ body {
     0,
     0,
     0,
-    0.5
+    0.4
   ); /* Darker background for better visibility */
 }
 
 /* Media Queries for Responsive Design */
-@media (max-width: 1000px) {
-  /* Adjust font size for mobile devices */
+
+/* Small Phones (Portrait, up to 480px) */
+@media (max-width: 480px) {
+  .carousel-caption h5 {
+    font-size: 1.5rem; /* Even smaller font size for very small screens */
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem; /* Smaller font size for very small screens */
+  }
+
+  .carousel-item {
+    height: 250px; /* Smaller height for very small screens */
+  }
+
+  .carousel-caption {
+    bottom: 5%; /* Adjust caption position closer to the bottom */
+  }
+}
+
+/* Phones (Portrait, up to 600px) */
+@media (max-width: 600px) {
   .carousel-caption h5 {
     font-size: 1.8rem; /* Smaller font size on mobile */
   }
@@ -79,13 +104,50 @@ body {
     font-size: 1rem; /* Smaller font size on mobile */
   }
 
-  /* Adjust height for smaller screens */
   .carousel-item {
-    height: 300px;
+    height: 300px; /* Adjust height for smaller screens */
   }
 
   .carousel-caption {
     bottom: 10%; /* Move the caption closer to the bottom */
+  }
+}
+
+/* Tablets (Portrait, up to 768px) */
+@media (max-width: 768px) {
+  .carousel-caption h5 {
+    font-size: 2.5rem; /* Slightly smaller heading for tablets */
+  }
+
+  .carousel-caption p {
+    font-size: 1.4rem; /* Slightly smaller paragraph for tablets */
+  }
+
+  .carousel-item {
+    height: 350px; /* Adjust height for tablets */
+  }
+
+  .carousel-caption {
+    bottom: 15%; /* Adjust text positioning on tablets */
+  }
+}
+
+/* Small Tablets and Larger Phones (up to 992px) */
+@media (max-width: 992px) {
+  .carousel-caption h5 {
+    font-size: 2.8rem; /* Slightly larger heading for larger phones/tablets */
+  }
+
+  .carousel-caption p {
+    font-size: 1.6rem; /* Slightly larger paragraph */
+  }
+
+  .carousel-item {
+    height: 400px; /* Adjust height for larger mobile/tablet screens */
+  }
+
+  .carousel-caption {
+    bottom: 20%; /* Keep text vertically aligned */
   }
 }
 
@@ -114,7 +176,7 @@ body {
 }
 
 #trending .card {
-  background-color: #4e43e2;
+  background-color: #2062f0;
   color: #fff;
   border: 1px solid #fff;
   border-radius: 5px;
