@@ -14,8 +14,8 @@ body {
 }
 
 /* Navbar Styles */
-nav{
-    padding: 30px !important;
+nav {
+  padding: 30px !important;
 }
 .navbar {
   background-color: #030122 !important;
@@ -31,7 +31,6 @@ nav{
 .nav-link:hover {
   color: #ff3399 !important;
 }
-
 
 /* Carousel Styles */
 .carousel-caption h5 {
@@ -171,6 +170,26 @@ nav{
 }
 
 /* Trending News Section */
+/* Add spacing between cards on mobile */
+@media (max-width: 767px) {
+  .row > [class*="col-"] {
+    margin-bottom: 15px; /* Adds space between rows */
+  }
+}
+
+/* Ensure cards don't touch each other on all devices */
+.card {
+  margin-bottom: 15px; /* Adds space below each card */
+  border: none; /* Optional: cleaner card style */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Styling adjustments */
+#trending h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 #trending {
   background-color: #030122;
 }
