@@ -1,17 +1,13 @@
-/* General Styles */
-body {
+/* Ensure the body takes full height */
+html, body {
   background-color: #030122;
   color: white;
   font-family: Arial, sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
-html,
-body {
-  height: 100%;
-  margin-bottom: 0 !important; /* Forces margin to 0 */
-}
 
 /* Navbar Styles */
 nav {
@@ -288,7 +284,10 @@ footer {
   background-color: #030122;
   border-top: 2px solid #0a84bd;
   padding: 0; /* Remove any unnecessary padding */
-  margin-bottom: 0 !important; /* Remove margin at the bottom */
+  margin: 0; /* Remove any margin */
+  width: 100%; /* Ensure footer takes full width */
+  position: relative; /* In case there are overlapping issues */
+  bottom: 0;
 }
 
 footer a {
