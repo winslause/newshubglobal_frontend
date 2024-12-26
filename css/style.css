@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   background-color: #030122;
   color: white;
@@ -6,6 +7,13 @@ body {
   padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+  margin-bottom: 0 !important; /* Forces margin to 0 */
+}
+
+/* Navbar Styles */
 .navbar {
   background-color: #030122 !important;
   border-bottom: 2px solid #0a84bd;
@@ -19,6 +27,7 @@ body {
   color: #ff3399 !important;
 }
 
+/* Carousel Styles */
 .carousel-caption h5 {
   font-size: 3.5rem;
   font-weight: bold;
@@ -34,16 +43,24 @@ body {
   bottom: 20%; /* Adjusts the position of text vertically */
 }
 
+/* Ensures all carousel items have the same height */
 .carousel-item {
-  height: 300px; /* Set a fixed height for each carousel item */
-  object-fit: cover; /* Ensures images cover the full height */
+  height: 500px; /* Fixed height for all carousel items */
 }
 
+.carousel-item img {
+  object-fit: cover; /* Ensures images cover the full height and width */
+  width: 100%; /* Makes sure images take the full width */
+  height: 100%; /* Makes sure images fill the container's height */
+}
+
+/* About Section */
 #about {
   background-color: #030122;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 0; /* Ensure no padding at the bottom */
 }
 
 .about-text {
@@ -105,14 +122,12 @@ body {
   margin-bottom: 20px;
 }
 
-/*Contact Section Styling*/
+/* Contact Section */
 #contact {
-  
   color: white;
 }
 
 #contact h2 {
-  
   color: #000;
   padding-left: 0;
   padding-right: 0;
@@ -152,10 +167,12 @@ body {
   border: 2px solid #0a84bd;
 }
 
-/* Footer Styling */
+/* Footer Styles */
 footer {
   background-color: #030122;
   border-top: 2px solid #0a84bd;
+  padding: 0; /* Remove any unnecessary padding */
+  margin-bottom: 0 !important; /* Remove margin at the bottom */
 }
 
 footer a {
@@ -165,14 +182,16 @@ footer a {
 
 .footer-container {
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 0; /* Add vertical padding */
 }
 
 .footer-column {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 20px; /* Ensures spacing between columns */
 }
 
 .footer-column a {
@@ -187,4 +206,3 @@ footer a {
 .footer-socials i {
   margin-right: 8px;
 }
-
