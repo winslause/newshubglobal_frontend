@@ -28,6 +28,7 @@ body {
 }
 
 /* Carousel Styles */
+/* Carousel Styles */
 .carousel-caption h5 {
   font-size: 3.5rem;
   font-weight: bold;
@@ -43,15 +44,49 @@ body {
   bottom: 20%; /* Adjusts the position of text vertically */
 }
 
-/* Ensures all carousel items have the same height */
+/* Ensures all images are the same size and fit well */
 .carousel-item {
-  height: 500px; /* Fixed height for all carousel items */
+  position: relative;
+  height: 500px; /* Set a fixed height for each carousel item */
 }
 
-.carousel-item img {
-  object-fit: cover; /* Ensures images cover the full height and width */
-  width: 100%; /* Makes sure images take the full width */
-  height: 100%; /* Makes sure images fill the container's height */
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images cover the full area */
+  object-position: center center; /* Keeps images centered */
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Darker background for better visibility */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 767px) {
+  /* Adjust font size for mobile devices */
+  .carousel-caption h5 {
+    font-size: 2.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.5rem;
+  }
+
+  /* Adjust height for smaller screens */
+  .carousel-item {
+    height: 300px;
+  }
+
+  .carousel-caption {
+    bottom: 10%;
+  }
 }
 
 /* About Section */
